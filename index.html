@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陈旧信纸文摘生成器</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Ma+Shan+Zheng&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>陈旧信纸文摘生成器</h1>
+        </header>
+        
+        <div class="main-content">
+            <div class="left-panel">
+                <div class="controls">
+                    <div class="control-group">
+                        <label for="background-select">选择背景:</label>
+                        <select id="background-select">
+                            <option value="paper1">古典信纸</option>
+                            <option value="paper2">羊皮纸</option>
+                            <option value="paper3">牛皮纸</option>
+                            <option value="paper4">竹简纸</option>
+                        </select>
+                    </div>
+                    
+                    <div class="control-group">
+                        <label for="font-select">选择字体:</label>
+                        <select id="font-select">
+                            <option value="serif">宋体</option>
+                            <option value="mashan">马善政楷体</option>
+                            <option value="kuaile">站酷快乐体</option>
+                        </select>
+                    </div>
+                    
+                    <div class="control-group">
+                        <label for="date-select">选择日期:</label>
+                        <input type="date" id="date-select">
+                    </div>
+                </div>
+                
+                <div class="input-section">
+                    <div class="input-group">
+                        <label for="digest-content">文摘内容:</label>
+                        <textarea id="digest-content" placeholder="请输入文摘内容..."></textarea>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="source">出处:</label>
+                        <input type="text" id="source" placeholder="请输入出处...">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="author">视频号作者:</label>
+                        <input type="text" id="author" placeholder="请输入视频号作者...">
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <button id="generate-btn">生成文摘</button>
+                    <button id="download-btn">下载图片</button>
+                    <button id="copy-btn">复制内容</button>
+                </div>
+            </div>
+            
+            <div class="right-panel">
+                <div class="preview-section">
+                    <div id="paper-preview" class="paper-container">
+                        <div class="paper-content">
+                            <div class="digest-title">今日书摘</div>
+                            <div class="digest-date"></div>
+                            <div class="digest-text">在这里将显示您的文摘内容...</div>
+                            <div class="source-info">
+                                <div class="source">——</div>
+                                <div class="author">@</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
