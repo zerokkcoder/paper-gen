@@ -39,7 +39,7 @@ http://localhost:8000
 
 #### 一键部署到 Vercel（推荐）
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/paper-gen)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone)
 
 点击上方按钮即可一键部署到Vercel，享受免费的全球CDN加速。
 
