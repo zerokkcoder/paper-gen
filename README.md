@@ -37,12 +37,31 @@ http://localhost:8000
 
 ### 方法三：在线部署
 
-可以将项目部署到任何静态网站托管服务：
-- GitHub Pages
-- Netlify
-- Vercel
-- 阿里云OSS
-- 腾讯云COS
+#### 一键部署到 Vercel（推荐）
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/paper-gen)
+
+点击上方按钮即可一键部署到Vercel，享受免费的全球CDN加速。
+
+#### 手动部署步骤
+
+1. **Fork本项目**到你的GitHub账户
+2. **登录Vercel**并连接GitHub账户
+3. **导入项目**：选择你Fork的仓库
+4. **部署设置**：
+   - Framework Preset: Other
+   - Root Directory: ./
+   - Build Command: 留空（静态文件无需构建）
+   - Output Directory: ./
+5. **点击Deploy**完成部署
+
+#### 其他托管服务
+
+也可以部署到其他静态网站托管服务：
+- **GitHub Pages**: 推送到gh-pages分支
+- **Netlify**: 拖拽文件夹或连接Git仓库
+- **阿里云OSS**: 上传到OSS并开启静态网站托管
+- **腾讯云COS**: 配置静态网站功能
 
 ## 项目结构
 
